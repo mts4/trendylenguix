@@ -1,2 +1,2 @@
-# trendylenguix
-Campaña creativa para el producto Lengüix
+# Trendy - Lengüix
+Campaña creativa del helado Lengüix para el cliente Trendy
