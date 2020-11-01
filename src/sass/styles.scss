@@ -2,11 +2,17 @@
 @import './preset';
 @import './globals';
 @import './fonts';
+@import './preload';
+@import './scrollbar';
+@import './imgFirstBlock';
 @import './rrss';
 @import './logo';
 @import './logoteam';
+@import './instructions';
+@import './iceCream';
 
 .firstblock{
+     position: relative;
      background-image: url('../img/bg_arcoiris.jpg');
      background-size: 100% 100%;
 }

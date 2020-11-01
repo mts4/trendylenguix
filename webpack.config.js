@@ -63,6 +63,7 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "./img/",
+              publicPath: "../img"
             },
           },
           {
@@ -97,7 +98,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              publicPath: "./fonts/",
+              publicPath: "../fonts/",
               outputPath: "fonts",
             },
           },
@@ -114,7 +115,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "./css/[name].min.css",
-      chunkFilename: "[id].min.css",
+      publicPath: "../"
     }),
     new HtmlWebpackPlugin({
       title: "Lengüix - Trendy",
@@ -122,9 +123,7 @@ module.exports = {
       minify: {
         html5: true,
         collapseWhitespace: true,
-        caseSensitive: true,
         removeComments: true,
-        removeEmptyElements: true,
       },
     }),
   ],
