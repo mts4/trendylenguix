@@ -16,3 +16,10 @@
      background-image: url('../img/bg_arcoiris.jpg');
      background-size: 100% 100%;
 }
+
+@media (max-width: 768px) {
+  .firstblock {
+     background-image: url('../img/bg_arcoiris-mobile.jpg');
+     overflow-x: hidden;
+  }
+}
