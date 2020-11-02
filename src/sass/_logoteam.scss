@@ -1,5 +1,4 @@
 .boxLogoTeams {
-  @include centerBlock;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -12,7 +11,7 @@
 }
 
 .boxLogoTeams .boxLogoTeams__logoTeam {
-  position: relative;
+  @include centerBlock;
   width: 100%;
   max-width: 650px;
 }

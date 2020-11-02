@@ -1,5 +1,4 @@
 .boxLogoIceCream {
-  @include centerBlock;
   margin-top: 10vh;
 }
 
@@ -10,6 +9,7 @@
 }
 
 .boxLogoIceCream .boxLogoIceCream__logoIceCream {
+  @include centerBlock;
   width: 100%;
   max-width: 500px;
 }
