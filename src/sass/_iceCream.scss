@@ -1,0 +1,21 @@
+.boxLogoIceCream {
+  @include centerBlock;
+  margin-top: 10vh;
+}
+
+@media (max-width: 768px) {
+  .boxLogoIceCream {
+    margin-top: 25vh;
+  }
+}
+
+.boxLogoIceCream .boxLogoIceCream__logoIceCream {
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .boxLogoIceCream .boxLogoIceCream__logoIceCream {
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,55 @@
+//Colors
+$colorWhite: #fbfbfb;
+$colorSpringGreen: #58fbab;
+$colorDeepPink: #ff00a0;
+$colorAquaMarine: #00e6fd;
+$colorLightYellow: #feea52;
+$colorBlack: #000000;
+$colorOrange: #ff8324;
+
+//Fonts Size
+$fontNormal: 1.5em;
+
+//Icon rrss Size
+@mixin iconSize {
+  height: 20px;
+  width: 20px;
+}
+
+//Efect hover globals
+@mixin transitionHover {
+  transition: all ease-in-out 0.5s;
+}
+
+//center item
+@mixin centerBlock {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin centerElement {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+//Media Query Responsive
+.visible-desktop {
+  display: block;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .visible-desktop {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+}

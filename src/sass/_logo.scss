@@ -1,0 +1,22 @@
+.boxLogo {
+  @include centerBlock;
+}
+
+@media (max-width: 768px) {
+     .boxLogo {
+       top: -30px;
+     }
+   }
+   
+
+.boxLogo .boxLogo__logoSite {
+  width: 100%;
+  max-width: 150px;
+  top: -5vh;
+}
+
+@media (max-width: 768px) {
+  .boxLogo .boxLogo__logoSite {
+    max-width: 110px;
+  }
+}

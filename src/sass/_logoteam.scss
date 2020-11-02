@@ -1,0 +1,26 @@
+.boxLogoTeams {
+  @include centerBlock;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .boxLogoTeams {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.boxLogoTeams .boxLogoTeams__logoTeam {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+@media (max-width: 991px) {
+  .boxLogoTeams .boxLogoTeams__logoTeam {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+}

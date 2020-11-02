@@ -1,0 +1,38 @@
+.boxInstructions {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.boxInstructions .boxInstructions__description {
+  @include centerElement;
+  color: $colorWhite;
+  font-size: $fontNormal;
+  max-width: 450px;
+}
+
+@media (max-width: 991px) {
+  .boxInstructions .boxInstructions__description {
+    max-width: 250px;
+  }
+}
+
+.boxInstructions .boxInstructions__btnPlay {
+  @include centerElement;
+  max-width: 230px;
+  text-transform: uppercase;
+  background-color: $colorSpringGreen;
+  padding: 5px 20px 5px 20px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: $colorDeepPink;
+  @include transitionHover;
+}
+
+.boxInstructions .boxInstructions__btnPlay:hover {
+  background-color: $colorBlack;
+  color: $colorOrange;
+}

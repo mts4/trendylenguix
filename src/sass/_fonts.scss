@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Breaking Mad";
+  src: url("../fonts/BreakingMad.eot");
+  src: url("../fonts/BreakingMad.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BreakingMad.woff2") format("woff2"),
+    url("../fonts/BreakingMad.woff") format("woff"),
+    url("../fonts/BreakingMad.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cobbler Bold';
+  src: url('../fonts/Cobbler-Bold.eot');
+  src: url('../fonts/Cobbler-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Cobbler-Bold.woff2') format('woff2'),
+      url('../fonts/Cobbler-Bold.woff') format('woff'),
+      url('../fonts/Cobbler-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cobbler Black';
+  src: url('../fonts/Cobbler-Black.eot');
+  src: url('../fonts/Cobbler-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Cobbler-Black.woff2') format('woff2'),
+      url('../fonts/Cobbler-Black.woff') format('woff'),
+      url('../fonts/Cobbler-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-breaking-mad{
+  font-family: "Breaking Mad";
+}
+.font-cobbler-bold{
+  font-family: 'Cobbler Bold';
+}
+.font-cobbler-black{
+  font-family: 'Cobbler Black';
+}

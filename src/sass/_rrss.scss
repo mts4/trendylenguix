@@ -1,0 +1,23 @@
+.rrss{
+     display: flex;
+     justify-content: flex-end;
+     padding-top: 20px;
+     padding-right: 20px;
+     margin: 0px;
+ 
+}
+
+.rrss li{
+     list-style: none;
+}
+
+.rrss__icon{
+     @include iconSize;
+     fill: $colorDeepPink;
+     margin-right: 15px;
+     @include transitionHover;
+}
+
+.rrss__icon:hover{
+     fill: $colorBlack;
+}

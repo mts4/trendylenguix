@@ -1,0 +1,91 @@
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transform: translateX(0);
+  background: white;
+}
+
+.loader.is-hidden {
+  transform: translateX(100%);
+  transition: transform ease-out 0.5s;
+}
+
+.loader .logo-preload {
+  position: absolute;
+  max-width: 150px;
+  top: 30%;
+}
+
+.spinner {
+  height:10vmin;
+  left:50%;
+  margin:-5vmin 0 0 -5vmin;
+  position:fixed;
+  top:50%;
+  width:10vmin;
+  &:before {
+    animation:blueRoute 4s linear infinite;
+    background-color:#09f;
+    content:"";
+    height:5vmin;
+    left:0;
+    opacity:.5;
+    position:absolute;
+    top:0;
+    width:5vmin;
+  }
+  &:after {
+    animation:pinkRoute 4s linear infinite;
+    background-color:#f09;
+    content:"";
+    height:5vmin;
+    left:5vmin;
+    opacity:.5;
+    position:absolute;
+    top:5vmin;
+    width:5vmin;
+  }
+}
+
+@keyframes blueRoute {
+  0% {
+    transform:translate(0,0) rotate(0);
+  }
+  25% {
+    transform:translate(5vmin,0) rotate(90deg);
+  }
+  50% {
+    transform:translate(5vmin,5vmin) rotate(180deg);
+  }
+  75% {
+    transform:translate(0,5vmin) rotate(270deg);
+  }
+  100% {
+    transform:translate(0,0) rotate(360deg);
+  }
+}
+
+@keyframes pinkRoute {
+  0% {
+    transform:translate(0,0);
+  }
+  25% {
+    transform:translate(-5vmin,0);
+  }
+  50% {
+    transform:translate(-5vmin,-5vmin);
+  }
+  75% {
+    transform:translate(0,-5vmin);
+  }
+  100% {
+    transform:translate(0,0);
+  }
+}
