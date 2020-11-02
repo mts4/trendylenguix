@@ -65,6 +65,7 @@
      text-align: center;
      .box_share__imgShare{
           position: relative;
+          @include centerBlock;
           max-width: 360px;
           top: -120px;
      }
