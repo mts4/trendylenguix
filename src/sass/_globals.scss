@@ -8,7 +8,20 @@ $colorBlack: #000000;
 $colorOrange: #ff8324;
 
 //Fonts Size
-$fontNormal: 1.5em;
+$fontNormal: 2rem;
+
+//Font Color
+.color-aquamarine {
+  color: $colorAquaMarine;
+}
+
+.color-white {
+  color: $colorWhite;
+}
+
+.color-light-yellow {
+  color: $colorLightYellow;
+}
 
 //Icon rrss Size
 @mixin iconSize {
@@ -38,7 +51,7 @@ $fontNormal: 1.5em;
 
 //Media Query Responsive
 .visible-desktop {
-  display: block;
+  visibility: block;
 }
 
 .visible-mobile {

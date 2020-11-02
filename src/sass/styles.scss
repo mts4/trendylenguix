@@ -10,6 +10,8 @@
 @import './logoteam';
 @import './instructions';
 @import './iceCream';
+@import './imgSecondBlock';
+@import './challenge';
 
 .firstblock{
      position: relative;
@@ -22,4 +24,10 @@
      background-image: url('../img/bg_arcoiris-mobile.jpg');
      overflow-x: hidden;
   }
+}
+
+.secondblock{
+  position: relative;
+  background-image: url('../img/bg_blue.jpg');
+  background-size: 100% 100%;
 }

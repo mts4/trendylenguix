@@ -31,6 +31,19 @@ import '../img/img03-mobile.png';
 import '../img/img04-mobile.png';
 import '../img/img05-mobile.png';
 
+import '../img/title-challenge.png';
+import '../img/premios.png';
+import '../img/img-tiktok-insta.png';
+import '../img/img-tiktok-insta-mobile.png';
+
+import '../img/img21.png';
+import '../img/img22.png';
+import '../img/img23.png';
+import '../img/img24.png';
+import '../img/img25.png';
+import '../img/img26.png';
+import '../img/img27.png';
+import '../img/img28.png';
 
 import { preLoad } from "./modules/preLoad";
 

@@ -12,10 +12,12 @@
   @include centerBlock;
   width: 100%;
   max-width: 500px;
+  padding-bottom: 150px;
 }
 
 @media (max-width: 768px) {
   .boxLogoIceCream .boxLogoIceCream__logoIceCream {
-    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
