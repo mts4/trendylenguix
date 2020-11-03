@@ -82,5 +82,11 @@
         padding-bottom: 100px;
       }
     }
+
+    @media (max-width: 550px) {
+      .box_share__imgShare {
+        max-width: 150px;
+      }
+    }
   }
 }
