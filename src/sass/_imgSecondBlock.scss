@@ -119,6 +119,20 @@
       }
     }
 
+    @media (max-width: 500px) {
+      .img23 {
+        max-width: 100px;
+        top: 290px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .img23 {
+        max-width: 80px;
+        top: 240px;
+      }
+    }
+
     .img24 {
       position: absolute;
       max-width: 250px;
@@ -292,6 +306,18 @@
     @media (max-width: 991px) {
       .img28 {
         display: none;
+      }
+    }
+
+    .img06-mobile {
+      position: absolute;
+      top: 330px;
+      max-width: 50px;
+    }
+
+    @media (max-width: 500px) {
+      .img06-mobile {
+        top: 250px;
       }
     }
   }

@@ -1,23 +1,58 @@
-.rrss{
-     display: flex;
-     justify-content: flex-end;
-     padding-top: 20px;
-     padding-right: 20px;
-     margin: 0px;
- 
+.rrss {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 20px;
+  margin: 0px;
 }
 
-.rrss li{
-     list-style: none;
+.rrss li {
+  list-style: none;
 }
 
-.rrss__icon{
-     @include iconSize;
-     fill: $colorDeepPink;
-     margin-right: 15px;
-     @include transitionHover;
+.rrss__icon {
+  @include iconSize;
+  fill: $colorDeepPink;
+  margin-right: 15px;
+  @include transitionHover;
 }
 
-.rrss__icon:hover{
-     fill: $colorBlack;
+.rrss__icon:hover {
+  fill: $colorBlack;
+}
+
+.nav {
+  position: fixed;
+  height: 50px;
+  display: block;
+  width: 100%;
+  z-index: 5;
+  background-color: transparent;
+  transition: background-color ease-in-out 0.5s;
+  .icon-menu {
+    position: absolute;
+    right: 0px;
+    max-width: 50px;
+  }
+  .logo-menu {
+    display: none;
+    transition: display ease-in-out 0.5s;
+  }
+  &.active {
+    background-color: $colorDeepPink;
+    overflow-x: hidden;
+    .icon-menu {
+      top: 5px;
+    }
+    .logo-menu {
+     position: absolute;
+     display: block;
+     top: 5px;
+     bottom: 0;
+     left: 0; 
+     right: 0; 
+     margin: 0 auto;
+     width: 70px; /* Need a specific value to work */
+    }
+  }
 }

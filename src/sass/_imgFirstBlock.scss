@@ -60,14 +60,15 @@
       .img03 {
         top: -10px;
         right: 0;
+        max-width: 200px;
       }
     }
 
     @media (max-width: 500px) {
       .img03 {
         max-width: 40vw;
-        top: 10px;
-        right: 15px;
+        top: -10px;
+        right: -5px;
       }
     }
 
@@ -98,14 +99,15 @@
       .img05 {
         max-width: 90px;
         top: 9%;
-        right: calc(50vw - 270px);
+        right: 0px
       }
     }
 
     @media (max-width: 560px) {
       .img05 {
         right: 0;
-        top: 160px;
+        top: 120px;
+        max-width: 70px;
       }
     }
 
@@ -195,20 +197,14 @@
     @media (max-width: 768px) {
       .img11 {
         max-width: 50vw;
-        bottom: 35%;
+        bottom: 37%;
         left: -20px;
       }
     }
 
     @media (max-width: 550px) {
       .img11 {
-        bottom: 37%;
-      }
-    }
-
-    @media (max-width: 400px) {
-      .img11 {
-        bottom: 33%;
+        bottom: 39%;
       }
     }
 

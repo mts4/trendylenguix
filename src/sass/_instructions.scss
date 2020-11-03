@@ -15,7 +15,12 @@
 
 @media (max-width: 991px) {
   .boxInstructions .boxInstructions__description {
-    max-width: 250px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .boxInstructions .boxInstructions__description {
+    font-size: 1.6rem;
   }
 }
 

@@ -30,6 +30,8 @@ import '../img/img02-mobile.png';
 import '../img/img03-mobile.png';
 import '../img/img04-mobile.png';
 import '../img/img05-mobile.png';
+import '../img/img06-mobile.png';
+import '../img/icon-menu.png';
 
 import '../img/title-challenge.png';
 import '../img/premios.png';
@@ -46,5 +48,7 @@ import '../img/img27.png';
 import '../img/img28.png';
 
 import { preLoad } from "./modules/preLoad";
+import { nav } from "./modules/nav";
 
 preLoad();
+nav();

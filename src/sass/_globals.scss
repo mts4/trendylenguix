@@ -60,7 +60,7 @@ $fontNormal: 2rem;
 
 @media (max-width: 768px) {
   .visible-desktop {
-    display: none;
+    display: none !important;
   }
 
   .visible-mobile {
