@@ -47,6 +47,9 @@ import '../img/img26.png';
 import '../img/img27.png';
 import '../img/img28.png';
 
+import '../img/footer_download.png';
+import '../img/footer_spotify.png';
+
 import { preLoad } from "./modules/preLoad";
 import { nav } from "./modules/nav";
 

@@ -1,4 +1,3 @@
-
 @import './preset';
 @import './globals';
 @import './fonts';
@@ -12,22 +11,23 @@
 @import './iceCream';
 @import './imgSecondBlock';
 @import './challenge';
+@import './footer';
 
-.firstblock{
-     position: relative;
-     background-image: url('../img/bg_arcoiris.jpg');
-     background-size: 100% 100%;
+.firstblock {
+    position: relative;
+    background-image: url('../img/bg_arcoiris.jpg');
+    background-size: 100% 100%;
 }
 
 @media (max-width: 768px) {
-  .firstblock {
-     background-image: url('../img/bg_arcoiris-mobile.jpg');
-     overflow-x: hidden;
-  }
+    .firstblock {
+        background-image: url('../img/bg_arcoiris-mobile.jpg');
+        overflow-x: hidden;
+    }
 }
 
-.secondblock{
-  position: relative;
-  background-image: url('../img/bg_blue.jpg');
-  background-size: 100% 100%;
+.secondblock {
+    position: relative;
+    background-image: url('../img/bg_blue.jpg');
+    background-size: 100% 100%;
 }
