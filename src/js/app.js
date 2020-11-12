@@ -35,8 +35,6 @@ import '../img/icon-menu.png';
 
 import '../img/title-challenge.png';
 import '../img/premios.png';
-import '../img/img-tiktok-insta.png';
-import '../img/img-tiktok-insta-mobile.png';
 
 import '../img/img21.png';
 import '../img/img22.png';
@@ -50,6 +48,9 @@ import '../img/img28.png';
 import '../img/footer_download.png';
 import '../img/footer_download2.png';
 import '../img/footer_spotify.png';
+
+import '../img/rrss_tiktok.png';
+import '../img/rrss_instagram.png';
 
 import { preLoad } from "./modules/preLoad";
 import { nav } from "./modules/nav";

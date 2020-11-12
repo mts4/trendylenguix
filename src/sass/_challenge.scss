@@ -158,29 +158,57 @@
         @include centerBlock;
         display: block;
         text-align: center;
-        .box_share__imgShare {
-            position: relative;
-            @include centerBlock;
-            max-width: 360px;
-            top: -120px;
-        }
-        @media (max-width: 1000px) {
-            .box_share__imgShare {
-                top: -50px;
-            }
-        }
-        @media (max-width: 768px) {
-            .box_share__imgShare {
-                @include centerBlock;
-                max-width: 200px;
-                margin-top: 30px;
-                padding-bottom: 100px;
-            }
-        }
+        // .box_share__imgShare {
+        //     position: relative;
+        //     @include centerBlock;
+        //     max-width: 360px;
+        //     top: -120px;
+        // }
+        // @media (max-width: 1000px) {
+        //     .box_share__imgShare {
+        //         top: -50px;
+        //     }
+        // }
+        // @media (max-width: 768px) {
+        //     .box_share__imgShare {
+        //         @include centerBlock;
+        //         max-width: 200px;
+        //         margin-top: 30px;
+        //         padding-bottom: 100px;
+        //     }
+        // }
 
-        @media (max-width: 550px) {
-            .box_share__imgShare {
-                max-width: 150px;
+        // @media (max-width: 550px) {
+        //     .box_share__imgShare {
+        //         max-width: 150px;
+        //     }
+        // }
+
+        .rrss_list {
+            position: relative;
+            top: -120px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    position: relative;
+                    max-width: 160px;
+                    display: block;
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                    > img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            li + li {
+                margin-left: 15px;
             }
         }
     }
