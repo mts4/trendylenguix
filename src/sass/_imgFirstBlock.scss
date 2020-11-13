@@ -423,14 +423,13 @@
     .img20 {
       position: absolute;
       width: 100%;
-      max-width: 270px;
+      max-width: 200px;
       top: 33%;
       left: 8vw;
     }
 
     @media (max-width: 1200px) {
       .img20 {
-        max-width: 250px;
         left: 5vw;
       }
     }
