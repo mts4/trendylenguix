@@ -94,10 +94,6 @@ const video = () => {
             });
         }
 
-        let getProgress = () => {
-            console.log(player.getCurrentTime());
-        }
-
         let myTimer;
         let onPlayerStateChange = (event) => {
             if (event.data === YT.PlayerState.ENDED) {
