@@ -41,6 +41,9 @@
             flex-grow: initial;
             flex-basis: initial;
         }
+        a{
+            text-decoration: none;
+        }
         .flex {
             height: 100%;
             display: flex;
@@ -73,15 +76,19 @@
                 margin-bottom: 2rem;
             }
         }
+
+        span{
+            display: inline;
+            color: $colorSpringGreen;
+            text-decoration: none;
+            font-size: $fontNormal;
+        }
         .download {
-            width: 200px;
-            margin-bottom: 1rem;
+            display: inline !important;
+            width: 30px;
             margin-right: 2rem;
             @media (max-width: 992px) {
                 width: 160px;
-            }
-            @media (max-width: 767px) {
-                width: 180px;
             }
         }
         .download2 {
