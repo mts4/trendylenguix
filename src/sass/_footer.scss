@@ -87,18 +87,12 @@
             display: inline !important;
             width: 30px;
             margin-right: 2rem;
-            @media (max-width: 992px) {
-                width: 160px;
-            }
         }
         .download2 {
-            width: 200px;
+            width: 250px;
             margin-right: 2rem;
-            @media (max-width: 992px) {
-                width: 160px;
-            }
             @media (max-width: 767px) {
-                width: 110px;
+                width: 200px;
             }
         }
         .footer_logo {
