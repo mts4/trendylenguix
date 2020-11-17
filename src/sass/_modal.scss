@@ -25,6 +25,15 @@
         padding: 20px;
         border-top: 10px solid $colorSpringGreen;
         border-radius: 5px;
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+        & .ifrm{
+            height: 450px;
+            @media (max-width: 600px) {
+                height: 250px;
+            }
+        }
     }
     .close {
         color: #fff;

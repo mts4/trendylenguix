@@ -20,9 +20,8 @@ const createIframe = () => {
   const idYT = btnModal.getAttribute("data-id");
   const boxIframe = document.querySelector(".box_iframe");
   const ifrm = document.createElement("iframe");
-  ifrm.setAttribute("id", "ifrm");
+  ifrm.setAttribute("class", "ifrm");
   ifrm.setAttribute("width", "100%");
-  ifrm.setAttribute("height", "450");
   ifrm.setAttribute(
     "src",
     `https://www.youtube.com/embed/${idYT}?autoplay=1&amp;modestbranding=1&amp;showinfo=0`

@@ -25,7 +25,7 @@ const video = () => {
                         'rel': 0,
                         'controls': 0,
                         'color': 'white',
-                        'mute': 1,
+                        'mute': 0,
                         'origin': window.location.origin
                     },
                     events: {

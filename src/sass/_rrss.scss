@@ -15,6 +15,13 @@
   fill: $colorDeepPink;
   margin-right: 15px;
   @include transitionHover;
+  @media (max-width: 768px) {
+    display: inline;
+    fill: $colorOrange;
+    height: 20px;
+    width: 20px;
+    margin-right: 0px;
+  }
 }
 
 .rrss__icon:hover {
@@ -23,15 +30,15 @@
 
 .nav {
   position: fixed;
-  height: 50px;
+  height: 70px;
   width: 100%;
   z-index: 5;
   background-color: transparent;
   transition: background-color ease-in-out 0.5s;
   .icon-menu {
     position: absolute;
-    right: 0px;
-    max-width: 50px;
+    right: 10px;
+    max-width: 30px;
   }
   .logo-menu {
     display: none;
@@ -41,17 +48,25 @@
     background-color: $colorDeepPink;
     overflow-x: hidden;
     .icon-menu {
-      top: 5px;
+      top: 15px;
     }
     .logo-menu {
-     position: absolute;
-     display: block;
-     top: 5px;
-     bottom: 0;
-     left: 0; 
-     right: 0; 
-     margin: 0 auto;
-     width: 70px; /* Need a specific value to work */
+      position: absolute;
+      display: block;
+      top: 5px;
+      bottom: 0;
+      left: 10px;
+      right: 0px;
+      width: 100px;
+    }
+  }
+
+  & .box_rrss{
+    position: absolute;
+    right: 15%;
+    top: 25px;
+    & a{
+      text-decoration: none;
     }
   }
 }
