@@ -55,21 +55,8 @@ import '../img/rrss_instagram.png';
 import { preLoad } from "./modules/preLoad";
 import { nav } from "./modules/nav";
 import { video } from './modules/video';
+import './modules/modal'
 
 preLoad();
 nav();
 video();
-
-if (document.getElementById("btnModal")) {
-    var modalWrap = document.getElementById("tvesModal");
-    var btnModal = document.getElementById("btnModal");
-    var btnClose = document.querySelector('.close');
-
-    btnModal.onclick = function () {
-        modalWrap.classList.add('is-active');
-    };
-
-    btnClose.onclick = function () {
-        modalWrap.classList.remove('is-active');
-    };
-}
