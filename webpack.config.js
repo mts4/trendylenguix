@@ -2,10 +2,18 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
   entry: "./src/js/app.js",
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        test: /\.js(\?.*)?$/i,
+      }),
+    ],
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/bundle.min.js",
@@ -41,15 +49,15 @@ module.exports = {
               autoprefixer: {
                 browser: ["last 2 versions"],
               },
-              plugins: () => [autoprefixer]
+              plugins: () => [autoprefixer],
             },
           },
-          
+
           {
             loader: "sass-loader",
             options: {
               implementation: require("sass"),
-              includePaths: ["./node_modules"]
+              includePaths: ["./node_modules"],
             },
           },
         ],
@@ -62,7 +70,7 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "./img/",
-              publicPath: "../img"
+              publicPath: "../img",
             },
           },
           {
@@ -114,7 +122,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "./css/[name].min.css",
-      publicPath: "../"
+      publicPath: "../",
     }),
     new HtmlWebpackPlugin({
       title: "Lengüix - Trendy",

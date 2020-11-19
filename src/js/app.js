@@ -1,4 +1,5 @@
 import '../sass/styles.scss';
+import '../img/favicon.png';
 import '../img/logo-team-desktop.png';
 import '../img/logo-team-mobile.png';
 import '../img/bg_arcoiris.jpg';
