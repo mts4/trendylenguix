@@ -24,7 +24,7 @@ const video = () => {
                         'showinfo': 0,
                         'rel': 0,
                         'controls': 0,
-                        'color': 'white',
+                        'color': 'red',
                         'mute': 0,
                         'origin': window.location.origin
                     },
@@ -46,7 +46,17 @@ const video = () => {
 
             const playButton = document.querySelector(".button-play.play");
             const pauseButton = document.querySelector(".button-play.pause");
+            const iframeYT = document.querySelector(".wrapVideo");
             // const voluemnButton = document.querySelector(".button-volume");
+
+            iframeYT.addEventListener("click", function () {
+                let pst = player.getPlayerState();
+                if (pst == 0 || pst == 2 || pst == 5) {
+                    document.querySelector(".pause").classList.remove('d-none');
+                    document.querySelector(".play").classList.add('d-none');
+                    player.playVideo();
+                }
+            });
 
             playButton.addEventListener("click", function () {
                 let pst = player.getPlayerState();
