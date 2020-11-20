@@ -2,18 +2,11 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
+  mode: "production",
   entry: "./src/js/app.js",
-  optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        test: /\.js(\?.*)?$/i,
-      }),
-    ],
-  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/bundle.min.js",
@@ -26,7 +19,7 @@ module.exports = {
         loader: "handlebars-loader",
       },
       {
-        test: /\.js$/,
+        test: /\.m?js$/,
         exclude: /(node_modules)/,
         use: {
           loader: "babel-loader",
@@ -128,7 +121,7 @@ module.exports = {
       title: "Lengüix - Trendy",
       template: "./src/index.handlebars",
       minify: {
-        html5: true,
+        hñtml5: true,
         collapseWhitespace: true,
         removeComments: true,
       },
